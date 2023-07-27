@@ -1,4 +1,4 @@
---CTE - Find the average amount paid by the top 5 customers.
+--CTE Find the average amount paid by the top 5 customers.
 
 WITH total_amount_paid (customer_first_name,customer_last_name,country,city,sum_amount_paid)
 	AS (SELECT  C.first_name AS customer_first_name, C.last_name AS customer_last_name, F.country, E.city, SUM(A.amount) AS sum_amount_paid 
