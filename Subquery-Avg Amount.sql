@@ -1,4 +1,4 @@
---Find the average amount paid by the top 5 customers. 
+-- Find the average amount paid by the top 5 customers. 
 
 SELECT AVG(total_amount_paid.sum_amount_paid) AS "average"
 FROM 
