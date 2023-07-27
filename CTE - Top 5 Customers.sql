@@ -1,4 +1,4 @@
-CTE for Step 2- Find out how many of the top 5 customers are based within each country.
+--CTE for Step 2- Find out how many of the top 5 customers are based within each country.
 
 WITH Top_5_Customers (customer_first_name,customer_id, customer_last_name, country, city, total_amount_paid)
 AS (SELECT  C.first_name AS customer_first_name,C.customer_id AS customer_id, C.last_name AS customer_last_name, F.country, E.city, SUM(A.amount) AS total_amount_paid
