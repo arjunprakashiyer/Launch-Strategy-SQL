@@ -1,4 +1,4 @@
---Showing all countries and their total customers including countries having top 5 customers.
+-- Showing all countries and their total customers including countries having top 5 customers.
 
 SELECT E.country,COUNT(DISTINCT C.customer_id) AS all_customer_count, COUNT(DISTINCT total_amount_paid.customer_id) AS top_customer_count
 FROM Customer C
